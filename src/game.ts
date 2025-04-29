@@ -210,11 +210,11 @@ export class Game extends CancelableEventEmitter {
 
     switch (this._discardedCard.value) {
       case Value.WILD_DRAW_FOUR:
-        this.privateDraw(this.getNextPlayer(), 4);
+        this.draw(this.getNextPlayer(), 4);
         this.goToNextPlayer(true);
         break;
       case Value.DRAW_TWO:
-        this.privateDraw(this.getNextPlayer(), 2);
+        this.draw(this.getNextPlayer(), 2);
         this.goToNextPlayer(true);
         break;
       case Value.SKIP:
