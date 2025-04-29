@@ -268,7 +268,7 @@ export class Game extends CancelableEventEmitter {
       }
     }
 
-    drawingPlayers.forEach((p) => this.privateDraw(p, 2));
+    drawingPlayers.forEach((p) => this.draw(p, 2));
 
     // return who drawn
     return drawingPlayers;
