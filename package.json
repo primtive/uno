@@ -9,6 +9,7 @@
   "types": "dist/src/uno-engine.d.ts",
   "scripts": {
     "build": "rollup -c --bundleConfigAsCjs",
+    "prepare": "yarn run build",
     "dev": "rollup -c -w",
     "docs": "typedoc --out docs/api/ src/**/*",
     "lint": "tslint -c tslint.json -p tsconfig.json",
